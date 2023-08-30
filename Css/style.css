@@ -42,7 +42,7 @@ body{
     justify-content: space-evenly;
 }
 
-.divResult{
+.divResult, .divSummary, .btnContinue{
     font-family: 'HankenGrotesk-Medium';
     align-items: center;
 }
@@ -51,13 +51,6 @@ body{
     /* font-family: 'HankenGrotesk-Medium'; */
     color: hsl(241, 100%, 89%);
     font-size: 1.2vw;
-}
-
-.divSummary{
-    width: 50%;
-    height: 100%;
-    background-color: white;
-    border-radius: 2.5vw;
 }
 
 .porcentaje{
@@ -90,4 +83,80 @@ body{
 .divFinish p{
     padding:  0vw 4.15vw;
     color: hsl(241, 100%, 89%);
+}
+
+
+/* Estilos de la Segunda Mitad de la Pagina */
+
+.divStats{
+    /* margin-bottom: 4vh; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1vh; */
+}
+
+.divSummary{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.divSummary h3{
+    color: hsl(224, 30%, 27%);
+    font-size: 1.3vw;
+}
+
+.nombreLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 40%;
+    /* margin-left: 1vw; */
+}
+
+.nombreLogo span{
+    margin-left: 0.5vw;
+}
+
+.memory, .reaction, .verbal, .visual{
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw
+}
+
+.memory img, .memory .nombreStat{
+    color: hsl(39, 100%, 56%);
+}
+
+.reaction img, .reaction .nombreStat{
+    color: hsl(0, 100%, 67%);
+}
+
+.verbal img, .verbal .nombreStat{
+    color: hsl(166, 100%, 37%);
+}
+
+.visual img, .visual .nombreStat{
+    color: hsl(234, 85%, 45%);
+}
+
+.btnContinue {
+    /* margin: 8vh; */
+    width: 65%;
+    color: hsl(0, 0%, 100%);
+    background: hsl(224, 30%, 27%) ;
+    padding: 1.7vh;
+    font-size: 1.8vh;
+    border-radius: 1.5vw;
 }
